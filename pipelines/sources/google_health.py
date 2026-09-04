@@ -1,6 +1,13 @@
 """
 Google Health source factory moved to pipelines.sources.google_health
 
+Prerequisite: Obtain refresh token through interactive flow.
+
+- `Setup Health <https://developers.google.com/health/setup>`_
+- Scopes: 
+    - https://www.googleapis.com/auth/googlehealth.activity_and_fitness.readonly
+    - https://www.googleapis.com/auth/googlehealth.sleep.readonly
+
 API Resources:
 
 - `List DataPoints <https://developers.google.com/health/reference/rest/v4/users.dataTypes.dataPoints/list>`_
@@ -15,6 +22,8 @@ import google.auth
 from google.oauth2.credentials import Credentials
 from google.auth.transport.requests import Request
 
+
+import requests
 
 from pipelines import SECRET_STORE
 
@@ -69,7 +78,10 @@ def get_google_health_token() -> str:
 
 
 def google_health_source(
-    access_token: str, initial_date: str = "1970-01-01", end_date: str | None = None
+    access_token: str,
+    initial_date: str = "1970-01-01",
+    end_date: str | None = None,
+    session: requests.Session | None = None,
 ):
     initial_ts = f"{initial_date}T00:00:00Z"
     end_ts = f"{end_date}T00:00:00Z" if end_date else None
@@ -134,4 +146,7 @@ def google_health_source(
             },
         ],
     }
+    if session:
+        api_config["client"]["session"] = session
+
     return rest_api_source(api_config)

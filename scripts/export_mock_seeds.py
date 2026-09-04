@@ -28,13 +28,17 @@ import csv
 import datetime
 import json
 import os
-from decimal import Decimal
 from pathlib import Path
+import sys
 from typing import List, Tuple
 
-from faker import Faker
 from google.cloud import bigquery
 import yaml
+
+# Ensure project root is in sys.path for script imports
+sys.path.insert(0, str(Path(__file__).parents[1]))
+
+from scripts.scrub_data import apply_fakes_to_rows
 
 # ---------------------------------------------------------------------------
 # Configuration
@@ -125,38 +129,6 @@ def export_table(client: bigquery.Client, source_name: str, identifier: str) -> 
         writer.writeheader()
         writer.writerows(results)
 
-
-def apply_fakes_to_rows(data_rows: List[dict]) -> None:
-    """Replace designated columns in the rows with realistic fake data."""
-    fake = Faker()
-    text_columns = {
-        # Notion columns
-        "properties__notes__rich_text",
-        "properties__description__rich_text",
-        # Hubspot columns
-        "properties__hs_note_body",
-        "properties__subject",
-        "properties__hs_task_body",
-        "properties__hs_call_title",
-        "properties__hs_call_body",
-        "properties__hs_meeting_title",
-        "properties__hs_meeting_body",
-        "properties__hs_internal_meeting_notes",
-        "properties__hs_communication_body",
-        "properties__name",
-        "properties__dealname",
-        "properties__content",
-    }
-    for row in data_rows:
-        for col in text_columns:
-            if col in row and row[col] is not None:
-                row[col] = fake.sentence(nb_words=12)
-        if "properties__firstname" in row:
-            row["properties__firstname"] = fake.first_name()
-        if "properties__lastname" in row:
-            row["properties__lastname"] = fake.last_name()
-        if "properties__email" in row:
-            row["properties__email"] = fake.email()
 
 
 def main() -> None:

@@ -117,7 +117,7 @@ HubSpot: `met_1to1` (>=2/week goal), `met_group` (>=2/week goal)
 - **Data Warehouse**: Google BigQuery
 - **Orchestration**: GitHub Actions
 - **Secret Management**: GCP Secret Manager or 1Password (configured via `SECRET_STORE` env var)
-- **Development**: Python 3.12, pipenv, VSCode Dev Containers
+- **Development**: Python 3.12, uv, VSCode Dev Containers
 
 ## Code Standards
 
