@@ -1,0 +1,40 @@
+{
+  "dataPoints": [
+    {
+      "dataSource": {
+        "recordingMethod": "UNKNOWN",
+        "application": {
+          "webClientId": "22D6M2"
+        },
+        "platform": "FITBIT_WEB_API"
+      },
+      "steps": {
+        "interval": {
+          "startTime": "2027-07-19T07:00:00Z",
+          "startUtcOffset": "-25200s",
+          "endTime": "2027-07-19T07:01:00Z",
+          "endUtcOffset": "-25200s",
+          "civilStartTime": {
+            "date": {
+              "year": 2026,
+              "month": 7,
+              "day": 19
+            },
+            "time": {}
+          },
+          "civilEndTime": {
+            "date": {
+              "year": 2026,
+              "month": 7,
+              "day": 19
+            },
+            "time": {
+              "minutes": 1
+            }
+          }
+        },
+        "count": "50"
+      }
+    }
+  ]
+}

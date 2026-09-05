@@ -1,0 +1,37 @@
+{
+  "total": 73,
+  "results": [
+    {
+      "id": "82792737307",
+      "properties": {
+        "associatedcompanyid": "26106730107",
+        "createdate": "2024-12-06T22:19:05.827Z",
+        "email": "ryanhickman@example.com",
+        "firstname": "Brian",
+        "hs_object_id": "82792737307",
+        "lastmodifieddate": "2026-07-21T00:03:59.224Z",
+        "lastname": "Waters"
+      },
+      "createdAt": "2024-12-06T22:19:05.827Z",
+      "updatedAt": "2026-07-21T00:03:59.224Z",
+      "archived": false,
+      "url": "https://app.hubspot.com/contacts/48175120/record/0-1/82792737307"
+    },
+    {
+      "id": "82791298350",
+      "properties": {
+        "associatedcompanyid": "26691434798",
+        "createdate": "2024-12-06T22:19:05.827Z",
+        "email": "richthomas@example.org",
+        "firstname": "Samantha",
+        "hs_object_id": "82791298350",
+        "lastmodifieddate": "2026-08-19T17:33:14.327Z",
+        "lastname": "Avila"
+      },
+      "createdAt": "2024-12-06T22:19:05.827Z",
+      "updatedAt": "2026-08-19T17:33:14.327Z",
+      "archived": false,
+      "url": "https://app.hubspot.com/contacts/48175120/record/0-1/82791298350"
+    }
+  ]
+}

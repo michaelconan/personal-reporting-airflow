@@ -42,7 +42,7 @@ def mock_google_health_apis(monkeypatch: MonkeyPatch, mock_responses) -> Callabl
         page_token = params.get("pageToken", [""])[0]
         # If a page token is present, return the second page of run1
         if page_token:
-            return sample_response(f"google_health_{resource}_run1-page2.json")
+            return sample_response(f"google_health__{resource}-run1_page2.json")
         # If filter contains a date >= 2026-08-31, treat as subsequent run
         filter_val = params.get("filter", [""])[0]
         if filter_val:
@@ -57,7 +57,7 @@ def mock_google_health_apis(monkeypatch: MonkeyPatch, mock_responses) -> Callabl
                     # treat this as a subsequent run and return run2 so the
                     # incremental row is appended.
                     if d != datetime(1970, 1, 1).date():
-                        return sample_response(f"google_health_{resource}_run2.json")
+                        return sample_response(f"google_health__{resource}-run2.json")
                 except Exception:
                     pass
 
@@ -65,10 +65,10 @@ def mock_google_health_apis(monkeypatch: MonkeyPatch, mock_responses) -> Callabl
         # return run2 to simulate a subsequent run. Use a slightly higher
         # threshold to avoid returning run2 during a single-run pagination.
         if counts[resource] >= 4:
-            return sample_response(f"google_health_{resource}_run2.json")
+                            return sample_response(f"google_health__{resource}-run2.json")
 
         # Default: first page of run1
-        return sample_response(f"google_health_{resource}_run1-page1.json")
+        return sample_response(f"google_health__{resource}-run1_page1.json")
 
     def setup(endpoints=[]):
         """Nested function to only register mock endpoints for tests.
@@ -140,8 +140,8 @@ class TestGoogleHealthPhases:
         configs: dict | None,
     ):
         # GIVEN
-        expected_rows = 2
-        file_name = f"google_health_{resource}_run1-page1.json"
+        expected_rows = 3
+        file_name = f"google_health__{resource}-run1_page1.json"
         source = sample_resource(
             file_name,
             resource_configs=configs,
@@ -164,7 +164,7 @@ class TestGoogleHealthPhases:
         configs: dict | None,
     ):
         # GIVEN
-        file_name = f"google_health_{resource}_run1-page1.json"
+        file_name = f"google_health__{resource}-run1_page1.json"
         source = sample_resource(
             file_name,
             resource_configs=configs,
@@ -200,7 +200,7 @@ def test_google_health_refresh(
 ):
     # GIVEN (1)
     mock_google_health_apis(endpoints=[resource])
-    expected_rows = 3  # 2 from page 1 + 1 from page 2
+    expected_rows = 5  # 3 from page 1 + 2 from page 2
     dataset = duckdb_pipeline.dataset_name
     table = resource
     write_disposition = None if increment else "replace"
@@ -251,4 +251,4 @@ def test_google_health_pipeline(mock_google_health_apis, duckdb_pipeline):
     dataset = duckdb_pipeline.dataset_name
     with duckdb_pipeline.sql_client() as client:
         sleep_table = client.execute_sql(f"SELECT COUNT(*) FROM {dataset}.google_health__sleep")
-        assert sleep_table[0][0] >= 2
+        assert sleep_table[0][0] >= 3

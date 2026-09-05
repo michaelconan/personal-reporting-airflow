@@ -51,6 +51,7 @@ exclude = [
 [tool.pytest.ini_options]
 markers = [
     "e2e: marks tests as end-to-end tests",
+    "live: marks tests that call external APIs and require explicit opt-in",
     "local: marks executable offline",
 ]
 # Disable responses plugin by default to prevent interference with e2e tests

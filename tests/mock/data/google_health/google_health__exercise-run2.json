@@ -1,0 +1,34 @@
+{
+  "dataPoints": [
+    {
+      "name": "users/1572136180662765935/dataTypes/exercise/dataPoints/42382420540470456",
+      "dataSource": {
+        "recordingMethod": "UNKNOWN",
+        "application": {
+          "webClientId": "22D6M2"
+        },
+        "platform": "FITBIT_WEB_API"
+      },
+      "exercise": {
+        "interval": {
+          "startTime": "2027-07-19T07:00:00Z",
+          "startUtcOffset": "-25200s",
+          "endTime": "2027-07-19T07:00:25Z",
+          "endUtcOffset": "-25200s"
+        },
+        "exerciseType": "WALKING",
+        "metricsSummary": {
+          "caloriesKcal": 1,
+          "distanceMillimeters": 37750,
+          "steps": "50",
+          "averagePaceSecondsPerMeter": 0.6622516556291391
+        },
+        "exerciseMetadata": {},
+        "displayName": "Walk",
+        "activeDuration": "25s",
+        "updateTime": "2027-07-19T08:41:10.609120Z",
+        "createTime": "2027-07-19T08:41:10.609120Z"
+      }
+    }
+  ]
+}

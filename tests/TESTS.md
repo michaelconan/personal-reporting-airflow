@@ -18,6 +18,6 @@ Test data is prepared in 3 files, typically leveraging example responses from AP
 
 File       | Contents
 ---------- | ------------
-run1-page1 | 3 records with a link or similar indicator that more data exists (pagination)
-run1-page2 | 2 records with an indicator that no more data exists
+run1_page1 | 3 records with a link or similar indicator that more data exists (pagination)
+run1_page2 | 2 records with an indicator that no more data exists
 run2       | 1 record with a larger cursor value (e.g., date) to test pagination

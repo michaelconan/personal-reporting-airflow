@@ -1,0 +1,47 @@
+{
+  "total": 31,
+  "results": [
+    {
+      "id": "66163311719",
+      "properties": {
+        "hs_createdate": "2024-12-07T14:36:35.673Z",
+        "hs_engagement_source": null,
+        "hs_lastmodifieddate": "2025-01-30T20:21:24.240Z",
+        "hs_object_id": "66163311719",
+        "hs_start_date": null,
+        "hs_task_body": null,
+        "hs_task_completion_date": "2025-01-16T07:21:51.016Z",
+        "hs_task_family": "SALES",
+        "hs_task_for_object_type": "OWNER",
+        "hs_task_parent_task_id": null,
+        "hs_task_priority": "NONE",
+        "hs_task_status": "COMPLETED"
+      },
+      "createdAt": "2024-12-07T14:36:35.673Z",
+      "updatedAt": "2025-01-30T20:21:24.240Z",
+      "archived": false,
+      "url": "https://app.hubspot.com/tasks/48175120/view/all/task/66163311719"
+    },
+    {
+      "id": "66158911894",
+      "properties": {
+        "hs_createdate": "2024-12-07T11:32:22.017Z",
+        "hs_engagement_source": null,
+        "hs_lastmodifieddate": "2025-06-22T14:14:01.203Z",
+        "hs_object_id": "66158911894",
+        "hs_start_date": null,
+        "hs_task_body": "Force three sort deal either yeah.",
+        "hs_task_completion_date": "2025-06-22T14:14:00.508Z",
+        "hs_task_family": "SALES",
+        "hs_task_for_object_type": "OWNER",
+        "hs_task_parent_task_id": null,
+        "hs_task_priority": "LOW",
+        "hs_task_status": "COMPLETED"
+      },
+      "createdAt": "2024-12-07T11:32:22.017Z",
+      "updatedAt": "2025-06-22T14:14:01.203Z",
+      "archived": false,
+      "url": "https://app.hubspot.com/tasks/48175120/view/all/task/66158911894"
+    }
+  ]
+}

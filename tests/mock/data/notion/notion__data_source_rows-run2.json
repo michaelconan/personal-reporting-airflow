@@ -1,0 +1,146 @@
+{
+  "object": "list",
+  "results": [
+    {
+      "object": "page",
+      "id": "39009eb8-3f76-81b7-a690-ed00cfc66c5d",
+      "created_time": "2027-07-01T07:11:00.000Z",
+      "last_edited_time": "2027-09-05T10:18:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "85bfc619-5ff8-43cb-a1b6-e24462525dda"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "fbdc9b25-5a85-48b5-a55e-12f5ae5e5e10"
+      },
+      "cover": null,
+      "icon": null,
+      "parent": {
+        "type": "data_source_id",
+        "data_source_id": "18f09eb8-3f76-809f-8140-000bbccd5616",
+        "database_id": "18f09eb8-3f76-805c-a567-dde667374441"
+      },
+      "in_trash": false,
+      "is_archived": false,
+      "is_locked": false,
+      "properties": {
+        "Discipline Analytics": {
+          "id": "%3A%3Dyq",
+          "type": "relation",
+          "relation": [
+            {
+              "id": "1b109eb8-3f76-80fb-81d5-c60f4d788a4a"
+            }
+          ],
+          "has_more": false
+        },
+        "Last edited time": {
+          "id": "%3C%7D%60n",
+          "type": "last_edited_time",
+          "last_edited_time": "2027-09-05T10:18:00.000Z"
+        },
+        "Training": {
+          "id": "%3ElGC",
+          "type": "checkbox",
+          "checkbox": true
+        },
+        "Blog": {
+          "id": "%40%40qz",
+          "type": "checkbox",
+          "checkbox": false
+        },
+        "Date": {
+          "id": "G%5BDm",
+          "type": "date",
+          "date": {
+            "start": "2027-07-01",
+            "end": null,
+            "time_zone": null
+          }
+        },
+        "Budget": {
+          "id": "KYeU",
+          "type": "checkbox",
+          "checkbox": true
+        },
+        "Travel": {
+          "id": "%5EqWK",
+          "type": "checkbox",
+          "checkbox": true
+        },
+        "Goal Review": {
+          "id": "%60uw%3F",
+          "type": "checkbox",
+          "checkbox": true
+        },
+        "Notes": {
+          "id": "bstF",
+          "type": "rich_text",
+          "rich_text": [
+            {
+              "type": "text",
+              "text": {
+                "content": "Others poor stay note big technology work media rest.",
+                "link": null
+              },
+              "annotations": {
+                "bold": false,
+                "italic": false,
+                "strikethrough": false,
+                "underline": false,
+                "code": false,
+                "color": "default"
+              },
+              "plain_text": "Jenna wedding, dbt course",
+              "href": null
+            }
+          ]
+        },
+        "Serve": {
+          "id": "srpS",
+          "type": "checkbox",
+          "checkbox": true
+        },
+        "Completion Rate": {
+          "id": "%7D%3B%3AH",
+          "type": "formula",
+          "formula": {
+            "type": "number",
+            "number": 0.833
+          }
+        },
+        "Name": {
+          "id": "title",
+          "type": "title",
+          "title": [
+            {
+              "type": "text",
+              "text": {
+                "content": "Hand opportunity specific owner per also.",
+                "link": null
+              },
+              "annotations": {
+                "bold": false,
+                "italic": false,
+                "strikethrough": false,
+                "underline": false,
+                "code": false,
+                "color": "default"
+              },
+              "plain_text": "Month: Jul 01, 2026",
+              "href": null
+            }
+          ]
+        }
+      },
+      "url": "https://app.notion.com/p/Month-Jul-01-2027-39009eb83f7681b7a690ed00cfc66c5d",
+      "public_url": null,
+      "archived": false
+    }
+  ],
+  "has_more": false,
+  "type": "page_or_data_source",
+  "page_or_data_source": {},
+  "request_id": "dd4bdb05-bfc4-459d-8ef3-da11188fb488"
+}

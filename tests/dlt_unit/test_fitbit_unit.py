@@ -34,14 +34,14 @@ def mock_fitbit_apis(monkeypatch: MonkeyPatch, mock_responses) -> Callable:
 
         if "2024-06-05" in after_date and offset == 0:
             # Subsequent run page
-            return sample_response(f"fitbit_{resource}_run2.json")
+            return sample_response(f"fitbit__{resource}-run2.json")
         else:
             if offset == 0:
                 # First page
-                return sample_response(f"fitbit_{resource}_run1-page1.json")
+                return sample_response(f"fitbit__{resource}-run1_page1.json")
             elif offset == limit:
                 # Second page
-                return sample_response(f"fitbit_{resource}_run1-page2.json")
+                return sample_response(f"fitbit__{resource}-run1_page2.json")
         # No more data
         return (200, {}, json.dumps({resource: []}))
 
@@ -108,7 +108,7 @@ class TestFitbitPhases:
     ):
         # GIVEN
         expected_rows = 3
-        file_name = f"fitbit_{resource}_run1-page1.json"
+        file_name = f"fitbit__{resource}-run1_page1.json"
         source = sample_resource(
             file_name,
             resource_configs=configs,
@@ -134,7 +134,7 @@ class TestFitbitPhases:
     ):
         # GIVEN
         # Files to load for sample test
-        file_name = f"fitbit_{resource}_run1-page1.json"
+        file_name = f"fitbit__{resource}-run1_page1.json"
         source = sample_resource(
             file_name,
             resource_configs=configs,

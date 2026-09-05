@@ -85,6 +85,15 @@ def google_health_source(
 ):
     initial_ts = f"{initial_date}T00:00:00Z"
     end_ts = f"{end_date}T00:00:00Z" if end_date else None
+    sleep_filter = 'sleep.interval.end_time >= "{incremental.start_value}"'
+    steps_filter = 'steps.interval.start_time >= "{incremental.start_value}"'
+    exercise_filter = 'exercise.interval.civil_start_time >= "{incremental.start_value}"'
+
+    if end_date:
+        sleep_filter += ' AND sleep.interval.end_time < "{incremental.end_value}"'
+        steps_filter += ' AND steps.interval.start_time < "{incremental.end_value}"'
+        exercise_filter += ' AND exercise.interval.civil_start_time < "{incremental.end_value}"'
+
     api_config = {
         "client": {
             "base_url": "https://health.googleapis.com/v4/",
@@ -104,9 +113,7 @@ def google_health_source(
                 "max_table_nesting": 2,
                 "endpoint": {
                     "path": "users/me/dataTypes/sleep/dataPoints",
-                    "params": {
-                        "filter": 'sleep.interval.end_time >= "{incremental.start_value}" AND sleep.interval.end_time < "{incremental.end_value}"'
-                    },
+                    "params": {"filter": sleep_filter, "pageSize": 25},
                     "incremental": {
                         "cursor_path": "sleep.interval.endTime",
                         "initial_value": initial_ts,
@@ -119,9 +126,7 @@ def google_health_source(
                 "max_table_nesting": 4,
                 "endpoint": {
                     "path": "users/me/dataTypes/steps/dataPoints",
-                    "params": {
-                        "filter": 'steps.interval.start_time >= "{incremental.start_value}" AND steps.interval.start_time < "{incremental.end_value}"'
-                    },
+                    "params": {"filter": steps_filter, "pageSize": 1000},
                     "incremental": {
                         "cursor_path": "steps.interval.startTime",
                         "initial_value": initial_ts,
@@ -134,9 +139,7 @@ def google_health_source(
                 "max_table_nesting": 2,
                 "endpoint": {
                     "path": "users/me/dataTypes/exercise/dataPoints",
-                    "params": {
-                        "filter": 'exercise.interval.civil_start_time >= "{incremental.start_value}" AND exercise.interval.civil_start_time < "{incremental.end_value}"'
-                    },
+                    "params": {"filter": exercise_filter, "pageSize": 25},
                     "incremental": {
                         "cursor_path": "exercise.interval.startTime",
                         "initial_value": initial_ts[:-1],

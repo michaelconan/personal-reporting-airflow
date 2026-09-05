@@ -1,0 +1,119 @@
+{
+  "dataPoints": [
+    {
+      "dataSource": {
+        "recordingMethod": "UNKNOWN",
+        "application": {
+          "webClientId": "22D6M2"
+        },
+        "platform": "FITBIT_WEB_API"
+      },
+      "steps": {
+        "interval": {
+          "startTime": "2026-07-18T07:56:00Z",
+          "startUtcOffset": "-25200s",
+          "endTime": "2026-07-18T07:57:00Z",
+          "endUtcOffset": "-25200s",
+          "civilStartTime": {
+            "date": {
+              "year": 2026,
+              "month": 7,
+              "day": 18
+            },
+            "time": {
+              "minutes": 56
+            }
+          },
+          "civilEndTime": {
+            "date": {
+              "year": 2026,
+              "month": 7,
+              "day": 18
+            },
+            "time": {
+              "minutes": 57
+            }
+          }
+        },
+        "count": "119"
+      }
+    },
+    {
+      "dataSource": {
+        "recordingMethod": "UNKNOWN",
+        "application": {
+          "webClientId": "22D6M2"
+        },
+        "platform": "FITBIT_WEB_API"
+      },
+      "steps": {
+        "interval": {
+          "startTime": "2026-07-18T07:56:00Z",
+          "startUtcOffset": "-25200s",
+          "endTime": "2026-07-18T07:57:00Z",
+          "endUtcOffset": "-25200s",
+          "civilStartTime": {
+            "date": {
+              "year": 2026,
+              "month": 7,
+              "day": 18
+            },
+            "time": {
+              "minutes": 56
+            }
+          },
+          "civilEndTime": {
+            "date": {
+              "year": 2026,
+              "month": 7,
+              "day": 18
+            },
+            "time": {
+              "minutes": 57
+            }
+          }
+        },
+        "count": "119"
+      }
+    },
+    {
+      "dataSource": {
+        "recordingMethod": "UNKNOWN",
+        "application": {
+          "webClientId": "22D6M2"
+        },
+        "platform": "FITBIT_WEB_API"
+      },
+      "steps": {
+        "interval": {
+          "startTime": "2026-07-18T07:57:00Z",
+          "startUtcOffset": "-25200s",
+          "endTime": "2026-07-18T07:58:00Z",
+          "endUtcOffset": "-25200s",
+          "civilStartTime": {
+            "date": {
+              "year": 2026,
+              "month": 7,
+              "day": 18
+            },
+            "time": {
+              "minutes": 57
+            }
+          },
+          "civilEndTime": {
+            "date": {
+              "year": 2026,
+              "month": 7,
+              "day": 18
+            },
+            "time": {
+              "minutes": 58
+            }
+          }
+        },
+        "count": "145"
+      }
+    }
+  ],
+  "nextPageToken": "Xm5h_-2FoSZxIlRuWjF5ZXF_bYu7p5XWJ2SQs5uuZg"
+}

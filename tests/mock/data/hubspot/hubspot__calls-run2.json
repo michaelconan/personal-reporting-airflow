@@ -1,0 +1,26 @@
+{
+  "total": 70,
+  "results": [
+    {
+      "id": "68738043994",
+      "properties": {
+        "hs_call_body": "Both accept strong environment analysis then save push event while.",
+        "hs_call_direction": "OUTBOUND",
+        "hs_call_disposition": "f240bbac-87c9-4f6e-bf70-924b57d47db7",
+        "hs_call_duration": "1800000",
+        "hs_call_source": "INTEGRATIONS_PLATFORM",
+        "hs_call_status": "COMPLETED",
+        "hs_call_title": "Challenge enter attack leader civil range enough position.",
+        "hs_createdate": "2026-01-11T21:27:48.763Z",
+        "hs_engagement_source": null,
+        "hs_lastmodifieddate": "2026-01-11T21:27:54.637Z",
+        "hs_object_id": "68738043994",
+        "hs_timestamp": "2025-11-25T00:00:00Z"
+      },
+      "createdAt": "2026-01-11T21:27:48.763Z",
+      "updatedAt": "2026-01-11T21:27:54.637Z",
+      "archived": false,
+      "url": "https://app.hubspot.com/calls/48175120/review/68738043994"
+    }
+  ]
+}

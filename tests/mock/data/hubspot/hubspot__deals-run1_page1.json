@@ -1,0 +1,79 @@
+{
+  "total": 8,
+  "results": [
+    {
+      "id": "52224432742",
+      "properties": {
+        "amount": "2000",
+        "closed_lost_reason": null,
+        "closed_won_reason": null,
+        "closedate": "2026-06-26T22:43:38.438Z",
+        "createdate": "2025-12-21T05:05:29.871Z",
+        "deal_currency_code": null,
+        "dealname": "Big stand time organization discover production.",
+        "dealstage": "closedlost",
+        "dealtype": "existingbusiness",
+        "hs_deal_stage_probability": "0",
+        "hs_forecast_probability": null,
+        "hs_lastmodifieddate": "2026-07-03T05:10:44.543Z",
+        "hs_object_id": "52224432742",
+        "pipeline": "default"
+      },
+      "createdAt": "2025-12-21T05:05:29.871Z",
+      "updatedAt": "2026-07-03T05:10:44.543Z",
+      "archived": false,
+      "url": "https://app.hubspot.com/contacts/48175120/record/0-3/52224432742"
+    },
+    {
+      "id": "55198070914",
+      "properties": {
+        "amount": "1500",
+        "closed_lost_reason": null,
+        "closed_won_reason": null,
+        "closedate": "2026-06-26T22:44:14.904Z",
+        "createdate": "2026-01-30T20:48:39.061Z",
+        "deal_currency_code": null,
+        "dealname": "Let age interesting young different investment through.",
+        "dealstage": "closedwon",
+        "dealtype": "existingbusiness",
+        "hs_deal_stage_probability": "1",
+        "hs_forecast_probability": null,
+        "hs_lastmodifieddate": "2026-07-17T10:35:00.541Z",
+        "hs_object_id": "55198070914",
+        "pipeline": "default"
+      },
+      "createdAt": "2026-01-30T20:48:39.061Z",
+      "updatedAt": "2026-07-17T10:35:00.541Z",
+      "archived": false,
+      "url": "https://app.hubspot.com/contacts/48175120/record/0-3/55198070914"
+    },
+    {
+      "id": "54323146871",
+      "properties": {
+        "amount": "1000",
+        "closed_lost_reason": null,
+        "closed_won_reason": null,
+        "closedate": "2026-03-07T23:05:51.190Z",
+        "createdate": "2026-01-21T22:17:17.141Z",
+        "deal_currency_code": null,
+        "dealname": "Quality race against fire attention.",
+        "dealstage": "closedlost",
+        "dealtype": "existingbusiness",
+        "hs_deal_stage_probability": "0",
+        "hs_forecast_probability": null,
+        "hs_lastmodifieddate": "2026-07-17T11:41:13.878Z",
+        "hs_object_id": "54323146871",
+        "pipeline": "default"
+      },
+      "createdAt": "2026-01-21T22:17:17.141Z",
+      "updatedAt": "2026-07-17T11:41:13.878Z",
+      "archived": false,
+      "url": "https://app.hubspot.com/contacts/48175120/record/0-3/54323146871"
+    }
+  ],
+  "paging": {
+    "next": {
+      "after": "6"
+    }
+  }
+}

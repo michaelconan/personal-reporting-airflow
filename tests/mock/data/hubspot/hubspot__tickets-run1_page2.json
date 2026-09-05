@@ -1,0 +1,43 @@
+{
+  "total": 7,
+  "results": [
+    {
+      "id": "48180896437",
+      "properties": {
+        "content": null,
+        "createdate": "2026-09-05T21:03:56.787Z",
+        "hs_lastmodifieddate": "2026-09-05T21:04:00.202Z",
+        "hs_object_id": "48180896437",
+        "hs_pipeline": "0",
+        "hs_pipeline_stage": "1",
+        "hs_resolution": null,
+        "hs_ticket_category": null,
+        "hs_ticket_priority": null,
+        "subject": "City table development cold center option thing."
+      },
+      "createdAt": "2026-09-05T21:03:56.787Z",
+      "updatedAt": "2026-09-05T21:04:00.202Z",
+      "archived": false,
+      "url": "https://app.hubspot.com/contacts/48175120/record/0-5/48180896437"
+    },
+    {
+      "id": "48180896440",
+      "properties": {
+        "content": null,
+        "createdate": "2026-09-05T21:04:42.298Z",
+        "hs_lastmodifieddate": "2026-09-05T21:04:45.381Z",
+        "hs_object_id": "48180896440",
+        "hs_pipeline": "0",
+        "hs_pipeline_stage": "1",
+        "hs_resolution": null,
+        "hs_ticket_category": null,
+        "hs_ticket_priority": null,
+        "subject": "Pressure ok you impact movement yet miss want."
+      },
+      "createdAt": "2026-09-05T21:04:42.298Z",
+      "updatedAt": "2026-09-05T21:04:45.381Z",
+      "archived": false,
+      "url": "https://app.hubspot.com/contacts/48175120/record/0-5/48180896440"
+    }
+  ]
+}

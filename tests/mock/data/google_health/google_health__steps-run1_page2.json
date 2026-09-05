@@ -1,0 +1,78 @@
+{
+  "dataPoints": [
+    {
+      "dataSource": {
+        "recordingMethod": "UNKNOWN",
+        "application": {
+          "webClientId": "22D6M2"
+        },
+        "platform": "FITBIT_WEB_API"
+      },
+      "steps": {
+        "interval": {
+          "startTime": "2026-07-18T07:57:00Z",
+          "startUtcOffset": "-25200s",
+          "endTime": "2026-07-18T07:58:00Z",
+          "endUtcOffset": "-25200s",
+          "civilStartTime": {
+            "date": {
+              "year": 2026,
+              "month": 7,
+              "day": 18
+            },
+            "time": {
+              "minutes": 57
+            }
+          },
+          "civilEndTime": {
+            "date": {
+              "year": 2026,
+              "month": 7,
+              "day": 18
+            },
+            "time": {
+              "minutes": 58
+            }
+          }
+        },
+        "count": "145"
+      }
+    },
+    {
+      "dataSource": {
+        "recordingMethod": "UNKNOWN",
+        "application": {
+          "webClientId": "22D6M2"
+        },
+        "platform": "FITBIT_WEB_API"
+      },
+      "steps": {
+        "interval": {
+          "startTime": "2026-07-19T07:00:00Z",
+          "startUtcOffset": "-25200s",
+          "endTime": "2026-07-19T07:01:00Z",
+          "endUtcOffset": "-25200s",
+          "civilStartTime": {
+            "date": {
+              "year": 2026,
+              "month": 7,
+              "day": 19
+            },
+            "time": {}
+          },
+          "civilEndTime": {
+            "date": {
+              "year": 2026,
+              "month": 7,
+              "day": 19
+            },
+            "time": {
+              "minutes": 1
+            }
+          }
+        },
+        "count": "50"
+      }
+    }
+  ]
+}

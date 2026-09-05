@@ -7,6 +7,7 @@ for testing DLT (Data Load Tool) pipeline components.
 # base imports
 import os
 import json
+from pathlib import Path
 from typing import Any
 
 # PyPI imports
@@ -14,7 +15,26 @@ import pytest
 import dlt
 
 
-MOCK_FOLDER = "tests/mock_data"
+MOCK_ROOT = Path(__file__).resolve().parents[1] / "mock" / "data"
+MOCK_FOLDER = str(MOCK_ROOT)
+
+
+def resolve_mock_path(file_name: str) -> str:
+    """Resolve fixture paths under the system-scoped tests/mock/data layout."""
+    if os.path.isabs(file_name):
+        return file_name
+
+    path = Path(file_name)
+    candidate = (MOCK_ROOT / path).resolve()
+    if candidate.exists():
+        return str(candidate)
+
+    system_prefix = file_name.split("__", 1)[0] if "__" in file_name else file_name.split("_", 1)[0]
+    candidate = (MOCK_ROOT / system_prefix / path.name).resolve()
+    if candidate.exists():
+        return str(candidate)
+
+    return str((MOCK_ROOT / path).resolve())
 
 
 # This environment variable is set to disable the Google Secrets provider for all dlt unit tests.
@@ -78,9 +98,9 @@ def sample_data(
     Returns:
         dict: Parsed JSON data from the file.
     """
-    file = os.path.join(MOCK_FOLDER, file_name)
+    file = resolve_mock_path(file_name)
     if not os.path.exists(file) and fallback is not None:
-        file = os.path.join(MOCK_FOLDER, fallback)
+        file = resolve_mock_path(fallback)
     with open(file, "r") as f:
         return json.load(f)
 
@@ -94,7 +114,7 @@ def sample_response(file_name: str) -> tuple[int, dict, str]:
     Returns:
         tuple: HTTP response tuple (status_code, headers, body).
     """
-    with open(os.path.join(MOCK_FOLDER, file_name), "r") as f:
+    with open(resolve_mock_path(file_name), "r") as f:
         return (200, {}, f.read())
 
 

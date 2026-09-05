@@ -1,0 +1,52 @@
+{
+  "results": [
+    {
+      "toObjectId": 82785701730,
+      "associationTypes": [
+        {
+          "category": "HUBSPOT_DEFINED",
+          "typeId": 200,
+          "label": null,
+          "fromObjectTypeId": null,
+          "toObjectTypeId": null
+        }
+      ]
+    },
+    {
+      "toObjectId": 82791298350,
+      "associationTypes": [
+        {
+          "category": "HUBSPOT_DEFINED",
+          "typeId": 200,
+          "label": null,
+          "fromObjectTypeId": null,
+          "toObjectTypeId": null
+        }
+      ]
+    },
+    {
+      "toObjectId": 82791860319,
+      "associationTypes": [
+        {
+          "category": "HUBSPOT_DEFINED",
+          "typeId": 200,
+          "label": null,
+          "fromObjectTypeId": null,
+          "toObjectTypeId": null
+        }
+      ]
+    },
+    {
+      "toObjectId": 82792774974,
+      "associationTypes": [
+        {
+          "category": "HUBSPOT_DEFINED",
+          "typeId": 200,
+          "label": null,
+          "fromObjectTypeId": null,
+          "toObjectTypeId": null
+        }
+      ]
+    }
+  ]
+}

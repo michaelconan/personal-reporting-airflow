@@ -1,0 +1,47 @@
+{
+  "total": 70,
+  "results": [
+    {
+      "id": "68735617380",
+      "properties": {
+        "hs_call_body": "Newspaper risk stuff clearly against avoid work question environmental.",
+        "hs_call_direction": "OUTBOUND",
+        "hs_call_disposition": "f240bbac-87c9-4f6e-bf70-924b57d47db7",
+        "hs_call_duration": "1800000",
+        "hs_call_source": "INTEGRATIONS_PLATFORM",
+        "hs_call_status": "COMPLETED",
+        "hs_call_title": "Five various what open visit.",
+        "hs_createdate": "2025-01-11T21:19:18.132Z",
+        "hs_engagement_source": null,
+        "hs_lastmodifieddate": "2025-01-11T21:20:14.771Z",
+        "hs_object_id": "68735617380",
+        "hs_timestamp": "2024-12-07T00:00:00Z"
+      },
+      "createdAt": "2025-01-11T21:19:18.132Z",
+      "updatedAt": "2025-01-11T21:20:14.771Z",
+      "archived": false,
+      "url": "https://app.hubspot.com/calls/48175120/review/68735617380"
+    },
+    {
+      "id": "68738118072",
+      "properties": {
+        "hs_call_body": "Would pass course probably heart join.",
+        "hs_call_direction": "OUTBOUND",
+        "hs_call_disposition": "f240bbac-87c9-4f6e-bf70-924b57d47db7",
+        "hs_call_duration": "1800000",
+        "hs_call_source": "INTEGRATIONS_PLATFORM",
+        "hs_call_status": "COMPLETED",
+        "hs_call_title": "Page station move couple top PM market.",
+        "hs_createdate": "2025-01-11T21:27:39.622Z",
+        "hs_engagement_source": null,
+        "hs_lastmodifieddate": "2025-01-11T21:27:45.674Z",
+        "hs_object_id": "68738118072",
+        "hs_timestamp": "2024-12-07T00:00:00Z"
+      },
+      "createdAt": "2025-01-11T21:27:39.622Z",
+      "updatedAt": "2025-01-11T21:27:45.674Z",
+      "archived": false,
+      "url": "https://app.hubspot.com/calls/48175120/review/68738118072"
+    }
+  ]
+}

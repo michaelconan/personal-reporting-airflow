@@ -1,0 +1,51 @@
+{
+  "total": 8,
+  "results": [
+    {
+      "id": "52276023380",
+      "properties": {
+        "amount": "2000",
+        "closed_lost_reason": null,
+        "closed_won_reason": null,
+        "closedate": "2026-04-11T14:52:28.515Z",
+        "createdate": "2025-12-21T05:15:30.654Z",
+        "deal_currency_code": null,
+        "dealname": "Recent religious successful degree same kitchen form.",
+        "dealstage": "closedwon",
+        "dealtype": "existingbusiness",
+        "hs_deal_stage_probability": "1",
+        "hs_forecast_probability": null,
+        "hs_lastmodifieddate": "2026-07-17T12:56:49.052Z",
+        "hs_object_id": "52276023380",
+        "pipeline": "default"
+      },
+      "createdAt": "2025-12-21T05:15:30.654Z",
+      "updatedAt": "2026-07-17T12:56:49.052Z",
+      "archived": false,
+      "url": "https://app.hubspot.com/contacts/48175120/record/0-3/52276023380"
+    },
+    {
+      "id": "53550500507",
+      "properties": {
+        "amount": "3000",
+        "closed_lost_reason": null,
+        "closed_won_reason": null,
+        "closedate": "2026-03-01T20:57:09.808Z",
+        "createdate": "2026-01-11T20:37:44.487Z",
+        "deal_currency_code": null,
+        "dealname": "Day less charge one baby apply.",
+        "dealstage": "closedwon",
+        "dealtype": "existingbusiness",
+        "hs_deal_stage_probability": "1",
+        "hs_forecast_probability": null,
+        "hs_lastmodifieddate": "2026-08-10T20:14:26.068Z",
+        "hs_object_id": "53550500507",
+        "pipeline": "default"
+      },
+      "createdAt": "2026-01-11T20:37:44.487Z",
+      "updatedAt": "2026-08-10T20:14:26.068Z",
+      "archived": false,
+      "url": "https://app.hubspot.com/contacts/48175120/record/0-3/53550500507"
+    }
+  ]
+}

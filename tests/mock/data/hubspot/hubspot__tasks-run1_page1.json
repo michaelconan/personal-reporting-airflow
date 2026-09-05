@@ -1,0 +1,73 @@
+{
+  "total": 31,
+  "results": [
+    {
+      "id": "66758941266",
+      "properties": {
+        "hs_createdate": "2024-12-14T13:41:56.018Z",
+        "hs_engagement_source": null,
+        "hs_lastmodifieddate": "2024-12-15T17:37:20.973Z",
+        "hs_object_id": "66758941266",
+        "hs_start_date": null,
+        "hs_task_body": "Whole establish reach east call home magazine.",
+        "hs_task_completion_date": "2024-12-15T17:37:20.120Z",
+        "hs_task_family": "SALES",
+        "hs_task_for_object_type": "OWNER",
+        "hs_task_parent_task_id": null,
+        "hs_task_priority": "NONE",
+        "hs_task_status": "COMPLETED"
+      },
+      "createdAt": "2024-12-14T13:41:56.018Z",
+      "updatedAt": "2024-12-15T17:37:20.973Z",
+      "archived": false,
+      "url": "https://app.hubspot.com/tasks/48175120/view/all/task/66758941266"
+    },
+    {
+      "id": "66740321425",
+      "properties": {
+        "hs_createdate": "2024-12-14T11:33:54.427Z",
+        "hs_engagement_source": null,
+        "hs_lastmodifieddate": "2025-01-04T07:52:47.591Z",
+        "hs_object_id": "66740321425",
+        "hs_start_date": null,
+        "hs_task_body": "Upon kid admit now alone continue hospital lay.",
+        "hs_task_completion_date": "2024-12-20T21:21:37.876Z",
+        "hs_task_family": "SALES",
+        "hs_task_for_object_type": "OWNER",
+        "hs_task_parent_task_id": null,
+        "hs_task_priority": "NONE",
+        "hs_task_status": "COMPLETED"
+      },
+      "createdAt": "2024-12-14T11:33:54.427Z",
+      "updatedAt": "2025-01-04T07:52:47.591Z",
+      "archived": false,
+      "url": "https://app.hubspot.com/tasks/48175120/view/all/task/66740321425"
+    },
+    {
+      "id": "66163311623",
+      "properties": {
+        "hs_createdate": "2024-12-07T14:36:13.311Z",
+        "hs_engagement_source": null,
+        "hs_lastmodifieddate": "2025-01-29T19:22:33.050Z",
+        "hs_object_id": "66163311623",
+        "hs_start_date": null,
+        "hs_task_body": null,
+        "hs_task_completion_date": "2025-01-16T07:21:47.367Z",
+        "hs_task_family": "SALES",
+        "hs_task_for_object_type": "OWNER",
+        "hs_task_parent_task_id": null,
+        "hs_task_priority": "NONE",
+        "hs_task_status": "COMPLETED"
+      },
+      "createdAt": "2024-12-07T14:36:13.311Z",
+      "updatedAt": "2025-01-29T19:22:33.050Z",
+      "archived": false,
+      "url": "https://app.hubspot.com/tasks/48175120/view/all/task/66163311623"
+    }
+  ],
+  "paging": {
+    "next": {
+      "after": "6"
+    }
+  }
+}

@@ -1,0 +1,52 @@
+{
+  "total": 16,
+  "results": [
+    {
+      "id": "26697466747",
+      "properties": {
+        "createdate": "2024-12-07T14:05:43.325Z",
+        "hs_ideal_customer_profile": null,
+        "hs_lastmodifieddate": "2026-02-21T10:01:43.912Z",
+        "hs_object_id": "26697466747",
+        "name": "PwC"
+      },
+      "createdAt": "2024-12-07T14:05:43.325Z",
+      "updatedAt": "2026-02-21T10:01:43.912Z",
+      "archived": false,
+      "url": "https://app.hubspot.com/contacts/48175120/record/0-2/26697466747"
+    },
+    {
+      "id": "26705539096",
+      "properties": {
+        "createdate": "2024-12-07T14:08:20.845Z",
+        "hs_ideal_customer_profile": null,
+        "hs_lastmodifieddate": "2026-07-07T11:41:30.217Z",
+        "hs_object_id": "26705539096",
+        "name": "Sigma Chi"
+      },
+      "createdAt": "2024-12-07T14:08:20.845Z",
+      "updatedAt": "2026-07-07T11:41:30.217Z",
+      "archived": false,
+      "url": "https://app.hubspot.com/contacts/48175120/record/0-2/26705539096"
+    },
+    {
+      "id": "26704393617",
+      "properties": {
+        "createdate": "2024-12-07T14:06:30.622Z",
+        "hs_ideal_customer_profile": "tier_3",
+        "hs_lastmodifieddate": "2026-07-10T06:09:44.616Z",
+        "hs_object_id": "26704393617",
+        "name": "Extended Family"
+      },
+      "createdAt": "2024-12-07T14:06:30.622Z",
+      "updatedAt": "2026-07-10T06:09:44.616Z",
+      "archived": false,
+      "url": "https://app.hubspot.com/contacts/48175120/record/0-2/26704393617"
+    }
+  ],
+  "paging": {
+    "next": {
+      "after": "6"
+    }
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "total": 7,
+  "results": [
+    {
+      "id": "48254345367",
+      "properties": {
+        "content": null,
+        "createdate": "2027-09-05T21:04:59.580Z",
+        "hs_lastmodifieddate": "2027-09-05T21:05:02.898Z",
+        "hs_object_id": "48254345367",
+        "hs_pipeline": "0",
+        "hs_pipeline_stage": "1",
+        "hs_resolution": null,
+        "hs_ticket_category": null,
+        "hs_ticket_priority": null,
+        "subject": "Music manage interview room care meeting."
+      },
+      "createdAt": "2027-09-05T21:04:59.580Z",
+      "updatedAt": "2027-09-05T21:05:02.898Z",
+      "archived": false,
+      "url": "https://app.hubspot.com/contacts/48175120/record/0-5/48254345367"
+    }
+  ]
+}

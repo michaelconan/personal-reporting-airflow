@@ -27,18 +27,18 @@ def mock_notion_apis(monkeypatch: MonkeyPatch, mock_responses) -> Callable:
         """Handle cursor-based pagination for Notion data source queries."""
         body = json.loads(request.body)
         start_cursor = body.get("start_cursor")
-        after_date = body["filter"]["date"]["after"]
+        after_date = body["filter"]["last_edited_time"]["after"]
 
         if "2024-06-05" in after_date:
             # Subsequent run page
-            return sample_response("notion_data_source_rows_run2.json")
+            return sample_response("notion__data_source_rows-run2.json")
         else:
             if not start_cursor:
                 # First page
-                return sample_response("notion_data_source_rows_run1-page1.json")
+                return sample_response("notion__data_source_rows-run1_page1.json")
             elif start_cursor == "cursor_page2_token":
                 # Second page
-                return sample_response("notion_data_source_rows_run1-page2.json")
+                return sample_response("notion__data_source_rows-run1_page2.json")
         # No more data
         return (
             200,
@@ -55,7 +55,7 @@ def mock_notion_apis(monkeypatch: MonkeyPatch, mock_responses) -> Callable:
 
     def data_sources_callback(request):
         """Handle data source search requests (single page)."""
-        return sample_response("notion_data_sources.json")
+            return sample_response("notion__data_sources.json")
 
     def setup(endpoints=[]):
         """Nested function to only register mock endpoints for tests.
@@ -123,8 +123,8 @@ class TestNotionPhases:
     ):
         # GIVEN
         expected_rows = 3 if "rows" in resource else 1
-        file_name = f"notion_{resource}_run1-page1.json"
-        file_name2 = f"notion_{resource}.json"
+        file_name = f"notion__{resource}-run1_page1.json"
+        file_name2 = f"notion__{resource}.json"
         source = sample_resource(
             file_name,
             fallback=file_name2,
@@ -151,8 +151,8 @@ class TestNotionPhases:
         configs: dict,
     ):
         # GIVEN
-        file_name = f"notion_{resource}_run1-page1.json"
-        file_name2 = f"notion_{resource}.json"
+        file_name = f"notion__{resource}-run1_page1.json"
+        file_name2 = f"notion__{resource}.json"
         source = sample_resource(
             file_name,
             fallback=file_name2,

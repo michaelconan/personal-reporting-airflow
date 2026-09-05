@@ -1,0 +1,16 @@
+{
+  "results": [
+    {
+      "toObjectId": 82785342603,
+      "associationTypes": [
+        {
+          "category": "HUBSPOT_DEFINED",
+          "typeId": 81,
+          "label": null,
+          "fromObjectTypeId": null,
+          "toObjectTypeId": null
+        }
+      ]
+    }
+  ]
+}

@@ -95,9 +95,6 @@ def notion_source(
                 "Notion-Version": "2025-09-03",
                 "Content-Type": "application/json",
             },
-            "paginator": JSONResponseCursorPaginator(
-                cursor_path="next_cursor", cursor_body_path="start_cursor"
-            ),
         },
         "resource_defaults": {
             "write_disposition": "append",
@@ -135,11 +132,17 @@ def notion_source(
         "endpoint": {
             "path": "data_sources/{resources.notion__data_sources.id}/query",
             "data_selector": "results",
+            "paginator": JSONResponseCursorPaginator(
+                cursor_path="next_cursor",
+                cursor_body_path="start_cursor",
+                has_more_path="has_more",
+            ),
             "json": {
                 "filter": {
-                    "property": "Last edited time",
-                    "date": {"after": "{incremental.start_value}"},
-                }
+                    "timestamp": "last_edited_time",
+                    "last_edited_time": {"after": "{incremental.start_value}"},
+                },
+                "page_size": 100,
             },
             "incremental": {
                 "cursor_path": "last_edited_time",
@@ -154,8 +157,8 @@ def notion_source(
             "and": [
                 rows_resource["endpoint"]["json"]["filter"],
                 {
-                    "property": "Last edited time",
-                    "date": {"before": "{incremental.end_value}"},
+                    "timestamp": "last_edited_time",
+                    "last_edited_time": {"before": "{incremental.end_value}"},
                 },
             ],
         }

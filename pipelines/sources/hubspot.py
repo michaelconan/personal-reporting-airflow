@@ -29,7 +29,7 @@ import requests
 # dlt
 import dlt
 from dlt.sources.rest_api import rest_api_resources
-from dlt.sources.helpers.rest_client.paginators import JSONResponseCursorPaginator
+from dlt.sources.helpers.rest_client.paginators import JSONResponseCursorPaginator, SinglePagePaginator
 from dlt.sources import DltResource
 
 
@@ -97,6 +97,7 @@ def hubspot_source(
             "endpoint": {
                 "path": f"crm-object-schemas/v3/schemas/{object_name}",
                 "method": "GET",
+                "paginator": {"type": "single_page"},
                 "data_selector": "$",
             },
             "write_disposition": "merge",

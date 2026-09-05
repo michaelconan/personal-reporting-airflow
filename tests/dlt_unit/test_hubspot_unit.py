@@ -11,12 +11,12 @@ import dlt
 
 # local imports
 from pipelines.sources.hubspot import hubspot_source, iso_to_unix
-from tests.dlt_unit.conftest import sample_data, sample_response, sample_resource
+from tests.dlt_unit.conftest import sample_data, sample_response, sample_resource, resolve_mock_path
 
 
 pytestmark = pytest.mark.local
 
-MOCK_FOLDER = "tests/mock_data"
+MOCK_FOLDER = "tests/mock/data"
 
 # All CRM objects in the HubSpot pipeline
 CRM_OBJECTS = [
@@ -56,15 +56,15 @@ def mock_hs_apis(monkeypatch: MonkeyPatch, mock_responses) -> Callable:
         filters = payload["filterGroups"][0]["filters"]
         start_filter = [f for f in filters if f["operator"] == "GTE"][0]
         if after is None:
-            file_name = f"hubspot_{object}_run1-page1.json"
+            file_name = f"hubspot__{object}-run1_page1.json"
         elif int(start_filter["value"]) > iso_to_unix("2025-01-01"):
             # Return data for subsequent run
-            file_name = f"hubspot_{object}_run2.json"
+            file_name = f"hubspot__{object}-run2.json"
         else:
             # Return data for second page
-            file_name = f"hubspot_{object}_run1-page2.json"
+            file_name = f"hubspot__{object}-run1_page2.json"
 
-        file_path = os.path.join(MOCK_FOLDER, file_name)
+        file_path = resolve_mock_path(file_name)
         if not os.path.exists(file_path):
             return (200, {}, json.dumps({"total": 0, "results": []}))
         return sample_response(file_name)
@@ -156,8 +156,8 @@ class TestHubspotPhases:
         # GIVEN
         # Includes nested table rows for schemas
         expected_rows = 17 if "schemas" in resource else 3
-        file_name = f"hubspot_{resource}_run1-page1.json"
-        file_name2 = f"hubspot_{resource}.json"
+        file_name = f"hubspot__{resource}-run1_page1.json"
+        file_name2 = f"hubspot__{resource}.json"
         source = sample_resource(
             file_name,
             fallback=file_name2,
@@ -184,8 +184,8 @@ class TestHubspotPhases:
     ):
         # GIVEN
         # Files to load for sample test
-        file_name = f"hubspot_{resource}_run1-page1.json"
-        file_name2 = f"hubspot_{resource}.json"
+        file_name = f"hubspot__{resource}-run1_page1.json"
+        file_name2 = f"hubspot__{resource}.json"
         source = sample_resource(
             file_name,
             fallback=file_name2,

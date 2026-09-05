@@ -1,0 +1,19 @@
+{
+  "total": 16,
+  "results": [
+    {
+      "id": "26691434798",
+      "properties": {
+        "createdate": "2025-12-06T22:53:23.996Z",
+        "hs_ideal_customer_profile": "tier_2",
+        "hs_lastmodifieddate": "2027-09-02T15:33:16.503Z",
+        "hs_object_id": "26691434798",
+        "name": "Dudes Group"
+      },
+      "createdAt": "2025-12-06T22:53:23.996Z",
+      "updatedAt": "2027-09-02T15:33:16.503Z",
+      "archived": false,
+      "url": "https://app.hubspot.com/contacts/48175120/record/0-2/26691434798"
+    }
+  ]
+}

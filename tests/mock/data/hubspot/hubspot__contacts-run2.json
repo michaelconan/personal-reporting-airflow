@@ -1,0 +1,21 @@
+{
+  "total": 73,
+  "results": [
+    {
+      "id": "82791145131",
+      "properties": {
+        "associatedcompanyid": "26106730107",
+        "createdate": "2025-12-06T22:19:07.864Z",
+        "email": "qalvarez@example.com",
+        "firstname": "James",
+        "hs_object_id": "82791145131",
+        "lastmodifieddate": "2027-08-25T21:19:10.977Z",
+        "lastname": "Nunez"
+      },
+      "createdAt": "2025-12-06T22:19:07.864Z",
+      "updatedAt": "2027-08-25T21:19:10.977Z",
+      "archived": false,
+      "url": "https://app.hubspot.com/contacts/48175120/record/0-1/82791145131"
+    }
+  ]
+}

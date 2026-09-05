@@ -1,0 +1,64 @@
+{
+  "dataPoints": [
+    {
+      "name": "users/1572136180662765935/dataTypes/exercise/dataPoints/6282038124202078872",
+      "dataSource": {
+        "recordingMethod": "UNKNOWN",
+        "application": {
+          "webClientId": "22D6M2"
+        },
+        "platform": "FITBIT_WEB_API"
+      },
+      "exercise": {
+        "interval": {
+          "startTime": "2026-07-18T07:00:00Z",
+          "startUtcOffset": "-25200s",
+          "endTime": "2026-07-18T07:57:44Z",
+          "endUtcOffset": "-25200s"
+        },
+        "exerciseType": "WALKING",
+        "metricsSummary": {
+          "caloriesKcal": 76,
+          "distanceMillimeters": 5230640,
+          "steps": "6928",
+          "averagePaceSecondsPerMeter": 0.662251655629139
+        },
+        "exerciseMetadata": {},
+        "displayName": "Walk",
+        "activeDuration": "3464s",
+        "updateTime": "2026-07-19T08:41:07.142432Z",
+        "createTime": "2026-07-19T08:41:07.142432Z"
+      }
+    },
+    {
+      "name": "users/1572136180662765935/dataTypes/exercise/dataPoints/42382420540470456",
+      "dataSource": {
+        "recordingMethod": "UNKNOWN",
+        "application": {
+          "webClientId": "22D6M2"
+        },
+        "platform": "FITBIT_WEB_API"
+      },
+      "exercise": {
+        "interval": {
+          "startTime": "2026-07-19T07:00:00Z",
+          "startUtcOffset": "-25200s",
+          "endTime": "2026-07-19T07:00:25Z",
+          "endUtcOffset": "-25200s"
+        },
+        "exerciseType": "WALKING",
+        "metricsSummary": {
+          "caloriesKcal": 1,
+          "distanceMillimeters": 37750,
+          "steps": "50",
+          "averagePaceSecondsPerMeter": 0.6622516556291391
+        },
+        "exerciseMetadata": {},
+        "displayName": "Walk",
+        "activeDuration": "25s",
+        "updateTime": "2026-07-19T08:41:10.609120Z",
+        "createTime": "2026-07-19T08:41:10.609120Z"
+      }
+    }
+  ]
+}

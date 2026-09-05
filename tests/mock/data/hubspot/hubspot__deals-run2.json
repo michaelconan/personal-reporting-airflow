@@ -1,0 +1,28 @@
+{
+  "total": 8,
+  "results": [
+    {
+      "id": "57230584994",
+      "properties": {
+        "amount": "2000",
+        "closed_lost_reason": null,
+        "closed_won_reason": null,
+        "closedate": "2027-08-25T21:17:57.510Z",
+        "createdate": "2027-03-01T20:58:19.015Z",
+        "deal_currency_code": null,
+        "dealname": "Baby after mind than because spend fund.",
+        "dealstage": "closedwon",
+        "dealtype": "existingbusiness",
+        "hs_deal_stage_probability": "1",
+        "hs_forecast_probability": null,
+        "hs_lastmodifieddate": "2027-08-25T21:18:04.126Z",
+        "hs_object_id": "57230584994",
+        "pipeline": "default"
+      },
+      "createdAt": "2027-03-01T20:58:19.015Z",
+      "updatedAt": "2027-08-25T21:18:04.126Z",
+      "archived": false,
+      "url": "https://app.hubspot.com/contacts/48175120/record/0-3/57230584994"
+    }
+  ]
+}
